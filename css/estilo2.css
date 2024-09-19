@@ -1,0 +1,71 @@
+.contenedor {
+    background-color: blueviolet;
+    padding: 10px;
+    font-size: 23px;
+    text-align: center;
+    display: grid;
+    grid-gap: 10px; 
+    grid-template-columns: 2fr 2fr 1fr;
+    grid-template-rows: 1fr 1fr 3fr 1fr 1fr;
+    grid-template-areas: 
+        "header header header"
+        "nav nav nav"
+        "contenido1 contenido2 ads"
+        "foot foot foot"
+        "facebook redes youtube";
+}
+
+.header {
+    background-color: chartreuse;
+    grid-area: header;
+}
+
+.nav {
+    background-color: bisque;
+    grid-area: nav;
+}
+
+.contenido1 {
+    background-color: aqua;
+    grid-area: contenido1;
+}
+
+.contenido2 {
+    background-color: lightcoral;
+    grid-area: contenido2;
+}
+
+.ads {
+    background-color: chocolate;
+    grid-area: ads;
+    display: grid;
+    grid-template-rows: 1fr auto;
+}
+
+.hijo-publicidad {
+    background-color: limegreen;
+    grid-row: 2; 
+}
+
+
+.foot {
+    background-color: darkgreen;
+    grid-area: foot;
+}
+
+.facebook {
+    background-color: darkkhaki;
+    grid-area: facebook;
+}
+
+.redes {
+    background-color: darkkhaki;
+    grid-area: redes;
+}
+
+.youtube {
+    background-color: darkkhaki;
+    grid-area: youtube;
+}
+
+
